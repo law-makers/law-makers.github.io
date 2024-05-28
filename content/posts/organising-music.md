@@ -14,7 +14,7 @@ Recently I've made efforts to have a local lossless music collection. The setup 
 - With [Plexamp](https://plexamp.com/), a solid music player client for Plex (runs on all major OSes)
 
 Here is the client on MacOS
-![Wes Montgomery on Plexamp](/static/images/wes.webp)
+![Wes Montgomery on Plexamp](/images/wes.webp)
 
 Cool thing is it allows me to stream library when I'm outside, download locally, etc. most of the cool features that Spotify and Apple Music have, but without the negatives that come with it, like paying for a subscriptions, being tracked, or having your tracks from a playlist removed for whatever reason that the providers decide.
 ;
