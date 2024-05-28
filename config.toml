@@ -1,5 +1,5 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'thoughts'
+title = 'blog'
 theme = "listed"
-Params.description = "Denis Khoshaba's blog | theden.sh"
+Params.description = "zulfikar/blog"
