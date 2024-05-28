@@ -1,6 +1,6 @@
 baseURL = ""
 languageCode = "en-us"
-title = "thoughts"
+title = "/blog"
 disableKinds = ["section", "categories", "tags"]
 disqusShortname = ""
 pygmentsCodeFences = false
@@ -43,7 +43,7 @@ disableHugoGeneratorInject = true
   github = ""
   facebook = ""
   og_image = ""
-  sitename = "Thoughts"
+  sitename = "blog/"
   twitter = ""
 
 [permalinks]

@@ -1,5 +1,5 @@
-baseURL = '/'
+baseURL = '/blog'
 languageCode = 'en-us'
-title = 'blog'
+title = '/blog'
 theme = "listed"
 Params.description = "zulfikar/blog"
