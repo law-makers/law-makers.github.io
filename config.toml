@@ -1,4 +1,4 @@
-baseURL = 'https://muhammad-zulfikar.github.io/blog'
+baseURL = '/'
 languageCode = 'en-us'
 title = '/blog'
 theme = "listed"
