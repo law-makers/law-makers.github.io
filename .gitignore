@@ -1,0 +1,20 @@
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
+Session.vim
+# temporary
+*.bak
+*.pyc
+*.backup
+*~
+.DS_STORE
+.netrwhist
+# auto-generated tag files
+tags
+resources
+.hugo_build.lock
+.DS_Store
+public/
