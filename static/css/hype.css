@@ -1,5 +1,5 @@
 *,
 *:before,
 *:after {
-  cursor: url("/images/cursor.png"), auto;
+  cursor: url("/static/images/cursor.png"), auto;
 }
