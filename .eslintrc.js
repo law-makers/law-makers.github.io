@@ -8,9 +8,6 @@ module.exports = {
 		'next',
 		'next/core-web-vitals',
 		'plugin:react/recommended',
-		'xo',
-		'xo-typescript',
-		'xo-react',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {

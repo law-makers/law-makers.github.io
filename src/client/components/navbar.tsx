@@ -1,7 +1,6 @@
 import {useState, useRef, useEffect} from 'react';
 import {FiMenu, FiSun, FiMoon} from 'react-icons/fi';
 import {useTheme} from 'next-themes';
-import Link from 'next/link';
 
 function useClickOutside(ref: React.RefObject<HTMLDivElement>, buttonRef: React.RefObject<HTMLButtonElement>, onClickOutside: () => void) {
 	useEffect(() => {

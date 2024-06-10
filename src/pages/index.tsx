@@ -1,9 +1,11 @@
+// Pages/index.tsx
 import {useState} from 'react';
 import {type PageConfig} from 'next';
 import Link from 'next/link';
-import type {ReactNode, SetStateAction} from 'react';
+import type {ReactNode} from 'react';
 import {posts, sortPosts} from '../posts';
 import Navbar from '../client/components/navbar';
+import SearchBar from '../client/components/searchbar';
 
 export const config: PageConfig = {
 	unstable_runtimeJS: false,
@@ -12,8 +14,8 @@ export const config: PageConfig = {
 export default function Home() {
 	const [searchQuery, setSearchQuery] = useState('');
 
-	const handleSearchChange = (event: {target: {value: SetStateAction<string>}}) => {
-		setSearchQuery(event.target.value);
+	const handleSearchChange = (value: string) => {
+		setSearchQuery(value);
 	};
 
 	const filteredPosts = sortPosts(posts).filter(post => (
@@ -24,15 +26,7 @@ export default function Home() {
 	return (
 		<main className="md:space-y-4 max-w-prose mx-auto px-2 md:px-0">
 			<Navbar />
-			<div className='flex justify-center items-center p-4 pt-0 md:pt-8'>
-				<input
-					type="text"
-					placeholder="Search..."
-					value={searchQuery}
-					className="bg-transparent border-2 border-black rounded-lg shadow-lg hover:shadow-xl dark:border-white text-black dark:text-white placeholder-black dark:placeholder-white p-2 outline-none"
-					onChange={handleSearchChange}
-				/>
-			</div>
+			<SearchBar onSearchChange={handleSearchChange} /> {/* Use the SearchBar component */}
 			<div className='custom-card p-4'>
 				<h2>
 					<span>zulfikar/blog</span>{' - '}
