@@ -48,7 +48,7 @@ export default function Home() {
 
 				<ul className="space-y-1 list-disc list-inside mt-4">
 					{filteredPosts.map(post => (
-						<BlogLink key={post.slug} href={`/${post.slug}`}>
+						<BlogLink key={post.slug} href={`/blog/${post.slug}`}>
 							{post.name}
 						</BlogLink>
 					))}
