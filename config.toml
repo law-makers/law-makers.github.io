@@ -1,6 +1,0 @@
-baseURL = "https://muhammad-zulfikar.github.io/blog"
-canonifyURLs = true
-languageCode = 'en-us'
-title = '/blog'
-theme = "listed"
-Params.description = "zulfikar/blog"

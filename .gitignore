@@ -1,20 +1,37 @@
-# swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-v][a-z]
-[._]sw[a-p]
-# session
-Session.vim
-# temporary
-*.bak
-*.pyc
-*.backup
-*~
-.DS_STORE
-.netrwhist
-# auto-generated tag files
-tags
-resources
-.hugo_build.lock
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+
+# next.js
+/.next/
+
+# misc
 .DS_Store
-public/
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+
+# vercel
+.vercel
+
+# editors
+.idea
+.vscode
+
+# typescript
+*.tsbuildinfo
