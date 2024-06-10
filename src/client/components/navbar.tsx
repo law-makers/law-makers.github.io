@@ -52,16 +52,17 @@ export default function Navbar() {
 					className={`px-4 py-2 mr-2 md:mt-6 md:mr-6 rounded-lg custom-card ${isNavOpen && 'z-10'}`}
 					onClick={toggleTheme}
 				>
-					{theme === 'dark' ? <FiSun className="w-6 h-6" /> : <FiMoon className="w-6 h-6" />}
+					<span>{theme === 'dark' ? <FiSun className="w-6 h-6" /> : <FiMoon className="w-6 h-6" />}</span>
 				</button>
+
 			</div>
 			{isNavOpen && (
 				<div ref={navRef} className="absolute left-6 md:left-10 w-48 rounded-md">
 					<div className='text-black dark:text-white rounded-xl focus:outline-none custom-card'>
 						<ul>
-							<li className="py-2 px-4 hover:underline cursor-pointer rounded-xl"> <Link href="https://muhammad-zulfikar.github.io">/</Link> </li>
-							<li className="py-2 px-4 hover:underline cursor-pointer rounded-xl"> <Link href="https://muhammad-zulfikar.github.io/stats">/stats</Link> </li>
-							<li className="py-2 px-4 hover:underline cursor-pointer rounded-xl"> <Link href="https://github.com/muhammad-zulfikar/blog" target='_blank'>/source</Link> </li>
+							<li className="py-2 px-4 hover:underline cursor-pointer rounded-xl"> <a href="https://muhammad-zulfikar.github.io">/</a> </li>
+							<li className="py-2 px-4 hover:underline cursor-pointer rounded-xl"> <a href="https://muhammad-zulfikar.github.io/stats">/stats</a> </li>
+							<li className="py-2 px-4 hover:underline cursor-pointer rounded-xl"> <a href="https://github.com/muhammad-zulfikar/blog" target='_blank' rel="noreferrer">/source</a> </li>
 						</ul>
 					</div>
 				</div>
