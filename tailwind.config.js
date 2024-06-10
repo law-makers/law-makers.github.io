@@ -2,8 +2,8 @@
 
 /** @type {import("tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
-	content: ['./src/**/*.{ts,tsx,css}'],
 	darkMode: 'class',
+	content: ['./src/**/*.{ts,tsx,css}'],
 	theme: {
 		fontFamily: {
 			mono: ['"DM Mono"', 'monospace'],
