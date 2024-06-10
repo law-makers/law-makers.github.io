@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { PageConfig } from 'next';
+import {useState} from 'react';
+import {type PageConfig} from 'next';
 import Link from 'next/link';
-import type { ReactNode, SetStateAction } from 'react';
-import { posts, sortPosts } from '../posts';
+import type {ReactNode, SetStateAction} from 'react';
+import {posts, sortPosts} from '../posts';
 import Navbar from '../client/components/navbar';
 
 export const config: PageConfig = {
@@ -12,16 +12,14 @@ export const config: PageConfig = {
 export default function Home() {
 	const [searchQuery, setSearchQuery] = useState('');
 
-	const handleSearchChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+	const handleSearchChange = (event: {target: {value: SetStateAction<string>}}) => {
 		setSearchQuery(event.target.value);
 	};
 
-	const filteredPosts = sortPosts(posts).filter((post) => {
-		return (
+	const filteredPosts = sortPosts(posts).filter(post => (
 			!post.hidden &&
 			post.name.toLowerCase().includes(searchQuery.toLowerCase())
-		);
-	});
+		));
 
 	return (
 		<main className="md:space-y-4 max-w-prose mx-auto px-2 md:px-0">
@@ -31,8 +29,8 @@ export default function Home() {
 					type="text"
 					placeholder="Search..."
 					value={searchQuery}
-					onChange={handleSearchChange}
 					className="bg-transparent border-2 border-black rounded-lg shadow-lg hover:shadow-xl dark:border-white text-black dark:text-white placeholder-black dark:placeholder-white p-2 outline-none"
+					onChange={handleSearchChange}
 				/>
 			</div>
 			<div className='custom-card p-4'>
@@ -49,7 +47,7 @@ export default function Home() {
 				</h2>
 
 				<ul className="space-y-1 list-disc list-inside mt-4">
-					{filteredPosts.map((post) => (
+					{filteredPosts.map(post => (
 						<BlogLink key={post.slug} href={`/${post.slug}`}>
 							{post.name}
 						</BlogLink>
@@ -65,7 +63,7 @@ export default function Home() {
 	);
 }
 
-function BlogLink(props: { readonly href: string; readonly children: ReactNode }) {
+function BlogLink(props: {readonly href: string; readonly children: ReactNode}) {
 	return (
 		<li>
 			<Link

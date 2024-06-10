@@ -8,7 +8,7 @@ import {StrictTSConfig} from './2022/08/strict-tsconfig/strict-tsconfig';
 import {WhichFruitsMayYouReap} from './2023/which-fruits-may-you-reap/which-fruits-may-you-reap';
 import {WTFESM} from './2023/wtf-esm/wtf-esm';
 import {SearchingGitHubForOpenAIApiKeys} from './2024/searching-github-openai-api-keys/searching-github-openai-api-keys';
-import { FunWithDNSTxtRecords } from './2024/fun-with-dns-txt-records/fun-with-dns-txt-records';
+import {FunWithDNSTxtRecords} from './2024/fun-with-dns-txt-records/fun-with-dns-txt-records';
 
 export const posts = [
 	new WhichFruitsMayYouReap(),
