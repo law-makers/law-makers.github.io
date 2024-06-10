@@ -34,7 +34,7 @@ export default function PostPage({slug}: Props) {
 		<div className="flex justify-between md:px-2">
 			<Link
 				className="text-neutral-600 dark:text-neutral-400 hover:underline"
-				href="/blog"
+				href="/"
 			>
 				../
 			</Link>

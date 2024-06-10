@@ -5,6 +5,7 @@
  **/
 const config = {
 	basePath: "/blog",
+	assetPrefix: "/blog",
 	typescript: {
 		ignoreBuildErrors: true,
 	},
