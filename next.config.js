@@ -7,16 +7,7 @@ const config = {
 	typescript: {
 		ignoreBuildErrors: true,
 	},
-
-	async redirects() {
-		return [
-			{
-				source: '/post/:slug',
-				destination: 'https://old.alistair.blog/post/:slug',
-				permanent: true,
-			},
-		];
-	},
+	output: "export",
 };
 
 module.exports = config;

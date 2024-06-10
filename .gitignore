@@ -26,8 +26,9 @@ yarn-error.log*
 .env.production.local
 .env
 
-# vercel
+# deploy
 .vercel
+out
 
 # editors
 .idea
