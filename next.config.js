@@ -4,7 +4,7 @@
  * @type {import('next').NextConfig}
  **/
 const config = {
-	basePath: "/blog"
+	basePath: "/blog",
 	typescript: {
 		ignoreBuildErrors: true,
 	},
